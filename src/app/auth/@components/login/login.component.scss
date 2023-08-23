@@ -1,0 +1,54 @@
+/* Styling for the left login form column */
+.login-form-container {
+    padding: 30px; /* Add padding for spacing between columns */
+  }
+  
+  .login-form {
+    max-width: 900px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add additional styling for form elements as needed */
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for the right image column */
+  .login-image {
+    background-color: #f0f0f0; /* Change to desired background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* Add padding for spacing between columns */
+  }
+  
+  
+  
+  
+  
+  
+  
+  

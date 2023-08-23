@@ -1,0 +1,76 @@
+
+<!-- <nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/dashboard-menu">
+      <img src="assets\images\ciedlogo.png" alt="Logo" class="logo-img" style="width: 50px; height: 50px;">
+    </a>
+    <div class="ml-auto d-flex align-items-center navbar-menu">
+      <button class="btn btn-secondary" [class.active]="activeButton === 'dashboard'" (click)="navigateToDashboardMenu()">Dashboard</button>
+      <button class="btn btn-secondary" [class.active]="activeButton === 'leads'" (click)="navigateToLeadsMenu()">Leads</button>
+      <app-search-bar (search)="onSearch($event)"></app-search-bar>
+      <button class="btn btn-secondary ml-3 add-leads-button" (click)="onAddLead()">+ Add Lead</button>
+      <div class="user-profile ml-3 d-flex align-items-center">
+        <img src="assets\images\cieddp.png" alt="User Profile" class="profile-img rounded-circle mr-2" style="width: 30px; height: 30px;">
+        <span class="text-white">User Name</span>
+      </div>
+      <button class="btn btn-secondary ml-3 settings" (click)="openSettings()">Settings</button>
+      <button class="btn btn-secondary ml-2 logout" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand" routerLink="/dashboard-menu">
+        <img src="assets\images\ciedlogo.png" alt="Logo" class="logo-img" style="width: 50px; height: 50px;">
+      </a>
+      <button class="btn btn-secondary ml-3" [ngClass]="{ 'active': activeButton === 'dashboard' }" (click)="navigateToDashboardMenu()">Dashboard</button>
+      <button class="btn btn-secondary ml-2" [ngClass]="{ 'active': activeButton === 'leads' }" (click)="navigateToLeadsMenu()">Leads</button>
+    </div>
+    <div class="ml-auto d-flex align-items-center navbar-menu">
+      
+      <!-- <app-search-bar (search)="onSearch($event)"></app-search-bar> -->
+      
+      <div class="add-leads-button-container"> 
+        <button class="btn btn-secondary add-leads-button" (click)="onAddLead()"> + Add Lead </button>
+      </div>
+      
+      <div class="user-profile ml-3 d-flex align-items-center">
+        <img src="assets\images\cieddp.png" alt="User Profile" class="profile-img rounded-circle mr-2" style="width: 30px; height: 30px;">
+        <span class="text-white">User Name</span>
+      </div>
+      
+      <button class="btn btn-secondary ml-3 settings btn-round" (click)="openSettings()">
+        <span class="icon-circle"><i class="fas fa-cog"></i></span> 
+      </button>
+      
+      <button class="btn btn-secondary ml-2 logout btn-round" (click)="logout()">
+        <span class="icon-circle"><i class="fas fa-sign-out-alt"></i></span> 
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+  
+  

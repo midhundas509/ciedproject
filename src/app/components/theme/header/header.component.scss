@@ -1,0 +1,177 @@
+
+
+// .navbar-menu {
+//   display: flex;
+//   align-items: center;
+
+//   button {
+//     margin-right: 10px;
+//     padding: 8px 16px;
+//     border: none;
+//     background-color: transparent;
+//     color: white;
+//     border-radius: 20px;
+//     transition: border-bottom-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+//     position: relative;
+//     font-weight: 600;
+//     font-size: 14px;
+
+//     &:hover {
+//       background-color: rgba(255, 255, 255, 0.1);
+//       color: lightblue;
+//     }
+
+//     &.active {
+//       background-color: transparent;
+//       color: lightblue;
+//       border-bottom: 2px solid lightblue;
+//     }
+//   }
+
+//   .add-leads-button {
+//     padding: 8px 20px;
+//     border-radius: 50px;
+//     background-color: #007bff;
+//     color: white;
+//     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+//     &:hover {
+//       background-color: #0056b3;
+//       color: white;
+//       box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+//     }
+//   }
+
+//   .settings,
+//   .logout {
+//     border: none;
+//     background-color: transparent;
+//     color: white;
+//     transition: color 0.3s ease-in-out;
+
+//     &:hover {
+//       color: lightblue;
+//     }
+//   }
+
+//   .profile-img {
+//     width: 30px;
+//     height: 30px;
+//   }
+// }
+
+
+.navbar {
+  margin-bottom: 0; /* Remove the default margin */
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-right: 10px; 
+  margin-left: 5px;
+}
+
+button {
+  margin-right: 10px;
+  margin-left: 15px;
+  padding: 8px 16px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+  transition: border-bottom-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: lightblue;
+  }
+
+  &.active {
+    background-color: transparent;
+    color: lightblue;
+    border-bottom: 2px solid lightblue;
+  }
+}
+
+.add-leads-button {
+  padding: 8px 20px;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #0056b3;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.add-leads-button-container {
+  margin-left: 15px; }
+
+
+.btn-round {
+  border-radius: 75%;
+  padding: 0.5rem;
+}
+
+.icon-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: #333; 
+  border-radius: 50%;
+  margin-right: 20px; 
+}
+
+.settings i,
+.logout i {
+  font-size: 15px;
+  color: grey; 
+}
+
+
+
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  

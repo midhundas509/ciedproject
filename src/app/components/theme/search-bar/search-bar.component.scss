@@ -1,0 +1,20 @@
+
+.custom-search {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px; 
+    padding: 10px 20px;
+  
+    &::placeholder {
+      color: grey;
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  
+  
