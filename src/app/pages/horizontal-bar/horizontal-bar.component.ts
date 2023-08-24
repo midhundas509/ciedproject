@@ -39,10 +39,10 @@ export class HorizontalBarComponent implements OnInit{
         labels: labels,
         datasets: [
           {
-            // label: 'Count',
+            label: 'Count',
             data: data,
             backgroundColor: backgroundColors,
-            borderColor: backgroundColors, // Use same color for border
+            borderColor: backgroundColors,
             borderWidth: 1
           }
         ]
@@ -59,8 +59,7 @@ export class HorizontalBarComponent implements OnInit{
             display: false
           }
         },
-        aspectRatio: 2.5, // Adjust the aspect ratio as needed
-        // maintainAspectRatio: false,
+        aspectRatio: 2.5, 
       }
     });
 
