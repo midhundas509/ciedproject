@@ -1,8 +1,18 @@
 .chart-container {
-    max-width: 100%; // Adjust the max-width as needed
-    margin: auto;
-    
-  }
+  max-width: 500%;
+  width: 200%; 
+  margin: auto;
+  height: 200px;
+  display: flex; 
+  align-items: center;
+  justify-items: center;
+}
+
+// .chart-container canvas {
+//   width: 500%;
+//   height: auto;
+// }
+
 
 
   

@@ -47,7 +47,8 @@ export class BarChartComponent implements OnInit {
       ],
     },
     options: {
-      aspectRatio: 3.5,
+      aspectRatio: 3,
+      // maintainAspectRatio: false,
     },
   });
 }

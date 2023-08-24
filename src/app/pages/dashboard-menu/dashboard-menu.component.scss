@@ -3,15 +3,31 @@
 .filter-button {
   background-color: whitesmoke;
   border: none;
-  margin-right: 10px;
+  margin-right: 25px;
   color: black;
   transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-  padding: 10px 20px; 
-  font-size: 16px; }
+  padding: 20px 25px; 
+  font-size: 23px; }
 
 .filter-button.active {
   background-color: #007bff;
   color: white;
+  font-size: 25px;
+}
+
+.tracker-button {
+  background-color: whitesmoke;
+  border: none;
+  margin-right: 25px;
+  color: black;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  padding: 5px 15px; 
+  font-size: 15px; }
+
+.tracker-button.select {
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
 }
 
 .custom-search {
@@ -75,6 +91,32 @@
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
     }
   }
+
+  // .chart-container {
+  //   max-width: 1000%; // Adjust the max-width as needed
+  //   margin: auto;
+  // }
+
+  .row {
+    display: flex;
+    justify-content: space-between; // Distribute the available space between charts
+  }
+  
+  .chart-container {
+    flex: 1; // Distribute available space within the row
+    max-width: 800%; // Adjust the max-width as needed
+    margin: auto;
+    height: 400px; // Set a common height for both charts
+  }
+  
+  
+  
+  
+  
+
+
+  
+  
 
 
 

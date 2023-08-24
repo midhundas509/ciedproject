@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import Chart from 'chart.js/auto';
+
 
 
 @Component({
@@ -15,7 +15,9 @@ export class DashboardMenuComponent implements OnInit {
   filteredData: any[] = [];
   displayedData: any[] = [];
   selectedFilter: string = '';
+  setFilter: string = '';
   stateCounts: { state: string; count: number }[] = [];
+  probabilityCounts: { probability: string; count: number }[] = [];
 
   data = [
     { lead_name: 'Apple Inc', date_added: '28 Nov 2022', current_state: 'Contact mode', probability: 'Medium', team_size: '100-250 people', location: 'Netherlands', revenue: '1-5 Million', category: 'agriculture' },
@@ -44,10 +46,13 @@ export class DashboardMenuComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+    this.setFilter = 'Active';
     this.selectedFilter = 'Contact mode';
     this.filteredData = [...this.data];
     this.updateDisplayedData();
     this.calculateStateCounts();
+    this.calculateProbabilityCounts();
   }
 
 
@@ -90,6 +95,27 @@ export class DashboardMenuComponent implements OnInit {
       state,
       count,
     }));
+  }
+
+  calculateProbabilityCounts() {
+    const probabilityCountsMap = new Map<string, number>();
+    for (const item of this.filteredData) {
+      if (probabilityCountsMap.has(item.probability)) {
+        probabilityCountsMap.set(
+          item.probability,
+          probabilityCountsMap.get(item.probability)! + 1
+        );
+      } else {
+        probabilityCountsMap.set(item.probability, 1);
+      }
+    }
+
+    this.probabilityCounts = Array.from(probabilityCountsMap).map(
+      ([probability, count]) => ({
+        probability,
+        count,
+      })
+    );
   }
   
   }

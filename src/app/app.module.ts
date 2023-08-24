@@ -10,9 +10,10 @@ import { DashboardComponent } from './components/dashboard/dashboard/dashboard.c
 import { DashboardMenuComponent } from './pages/dashboard-menu/dashboard-menu.component';
 import { AddLeadsComponent } from './components/theme/add-leads/add-leads.component';
 import { LeadsMenuComponent } from './pages/leads-menu/leads-menu.component';
-// import { SearchBarComponent } from './components/theme/search-bar/search-bar.component';
+import { SearchBarComponent } from './components/theme/search-bar/search-bar.component';
 import { FilterPipe } from './filter.pipe';
 import { BarChartComponent } from './pages/bar-chart/bar-chart.component';
+import { HorizontalBarComponent } from './pages/horizontal-bar/horizontal-bar.component';
 
 
 
@@ -23,10 +24,11 @@ import { BarChartComponent } from './pages/bar-chart/bar-chart.component';
     DashboardComponent,
     DashboardMenuComponent,
     AddLeadsComponent,
-    // SearchBarComponent,
+    SearchBarComponent,
     FilterPipe,
     LeadsMenuComponent,
-    BarChartComponent
+    BarChartComponent,
+    HorizontalBarComponent
   ],
   imports: [
     BrowserModule,
