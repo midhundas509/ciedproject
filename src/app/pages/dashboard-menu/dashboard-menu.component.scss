@@ -21,7 +21,8 @@
   margin-right: 25px;
   color: black;
   transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-  padding: 5px 15px; 
+  padding: 5px 10px; 
+  border-radius: 20px;
   font-size: 15px; }
 
 .tracker-button.select {
@@ -92,21 +93,18 @@
     }
   }
 
-  // .chart-container {
-  //   max-width: 1000%; // Adjust the max-width as needed
-  //   margin: auto;
-  // }
+
 
   .row {
     display: flex;
-    justify-content: space-between; // Distribute the available space between charts
+    justify-content: space-between; 
   }
   
   .chart-container {
-    flex: 1; // Distribute available space within the row
-    max-width: 800%; // Adjust the max-width as needed
+    flex: 1; 
+    max-width: 800%;
     margin: auto;
-    height: 400px; // Set a common height for both charts
+    height: 400px;
   }
 
  

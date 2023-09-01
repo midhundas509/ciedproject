@@ -14,7 +14,7 @@ export class LeadsMenuComponent implements OnInit {
   }
 
   navigateToDashboard() {
-    this.router.navigate(['/dashboard']); // Navigate to Dashboard Menu
+    this.router.navigate(['/dashboard']); 
   }
 
 }

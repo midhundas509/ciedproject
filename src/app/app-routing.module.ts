@@ -16,7 +16,7 @@ const routes: Routes = [
     { path: 'logout', component: LogoutComponent},
     { path: 'dashboard-menu', component: DashboardComponent },
     { path: 'leads-menu', component: LeadsMenuComponent }, 
-    { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, // Updated default route 
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, 
 ];
 
 @NgModule({

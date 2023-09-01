@@ -1,4 +1,6 @@
-<div class="container">
+  
+
+  <div class="container">
     <h2>Signup</h2>
     <form>
       <div class="form-group">
@@ -17,7 +19,8 @@
         <label for="password">Password</label>
         <input type="password" class="form-control" id="password">
       </div>
-      <button type="submit" class="btn btn-primary">Register</button>
+      <button type="button" class="btn btn-primary" (click)="register()">Register</button>
+      <p class="success-message" *ngIf="registrationSuccessful">Registration successful!</p>
     </form>
-  </div>
-  
+</div>
+

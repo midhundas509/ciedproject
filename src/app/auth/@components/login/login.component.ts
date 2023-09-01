@@ -1,4 +1,4 @@
-// login.component.ts
+
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -31,15 +31,14 @@ export class LoginComponent {
       );
 
       if (user) {
-        alert('Login successful'); // Replace with your actual authentication logic
-        this.router.navigate(['/dashboard']); // Redirect to dashboard after login
+        alert('Login successful'); 
+        this.router.navigate(['/dashboard']); 
       } else {
-        // Check if the user is registered before showing invalid credentials alert
         const isRegistered = this.staticUsers.some((u) => u.email === formData.email);
         if (isRegistered) {
           alert('Invalid credentials');
         } else {
-          this.router.navigate(['/register']); // Redirect to registration page
+          this.router.navigate(['/register']); 
         }
       }
     }

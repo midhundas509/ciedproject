@@ -29,7 +29,7 @@ export class HorizontalBarComponent implements OnInit{
       } else if (probability === 'Low') {
         return 'rgba(255, 99, 71, 0.6)';
       } else {
-        return 'rgba(0, 0, 0, 0.6)'; // Default color
+        return 'rgba(0, 0, 0, 0.6)'; 
       }
     });
   

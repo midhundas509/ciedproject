@@ -16,7 +16,6 @@ import { BarChartComponent } from './pages/bar-chart/bar-chart.component';
 import { HorizontalBarComponent } from './pages/horizontal-bar/horizontal-bar.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
